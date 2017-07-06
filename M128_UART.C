@@ -111,14 +111,14 @@ unsigned char Com1_rd_char(void)
 void UART0_TX_interrupt(void)
 {
     if(Com1_Twi_posi != Com1_Trd_posi)
-        COM1 = Com1_TriBuff[Com1_Trd_posi++];
+        COM1 = Com1_TriBuff[Com1_Trd_posi++]; 
 }
 
 #pragma interrupt_handler UART0_RX_interrupt:iv_USART0_RX 
 void UART0_RX_interrupt(void)
 {
 	PORTA ^= 0x01;
- 	Com1_RecBuff[Com1_Rwi_posi++] = COM1;
+ 	Com1_RecBuff[Com1_Rwi_posi++] = COM1; 	 
 }
 
 void Com2_Init(char _rate)
