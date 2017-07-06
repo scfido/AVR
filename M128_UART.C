@@ -13,7 +13,7 @@
 #define     COM1_ParityMode     0       // 0: Disabled   2: Even Parity  3: Odd Parity 
 #define     Com1buffsize        256
 
-#define     COM2_BaudRate	2
+#define     COM2_BaudRate	2	// 0: 4800  1: 9600 2: 19200 3: 32800 4: 57600 5: 115200
 #define     COM2_DataBit	3       // 0: 5Bit  1: 6Bit  2: 7Bit  3: 8Bit  7: 9Bit
 #define     COM2_StopBit	0       // 0: 1Bit  1: 2Bit
 #define     COM2_ParityMode	0       // 0: Disabled   2: Even Parity  3: Odd Parity 
